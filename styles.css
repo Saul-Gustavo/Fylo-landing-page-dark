@@ -49,7 +49,7 @@ body {
 .container {
     width: 90%;
     max-width: 1440px;
-    margin: auto;
+    margin: 0 auto;
     padding: var(--padding-cont);
     overflow: hidden;
 }
@@ -75,6 +75,12 @@ body {
 .menu li .link {
     text-decoration: none;
     color: aliceblue;
+    font-size: 1.2rem;
+}
+
+.menu li .link:hover {
+    text-decoration: underline;
+    color: var(--white);
 }
 
 .hero {
@@ -111,6 +117,7 @@ body {
     max-width: 600px;
     display: block;
     margin: 0 auto;
+    padding: 0px 1rem;
 }
 
 .title-hero {
@@ -124,7 +131,7 @@ body {
 }
 
 .cta-hero {
-    padding: 1rem 5rem;
+    padding: 1.4rem 6rem;
     border-radius: 30px;
     display: inline-block;
     background-image: var(--gradient);
@@ -132,6 +139,11 @@ body {
     color: #ffff;
     font-family: var(--headings);
     font-weight: bold;
+    cursor: pointer;
+}
+
+.cta-hero:hover, .submit:hover {
+    opacity: 0.7;
 }
 
 .cards {
@@ -190,6 +202,11 @@ body {
     margin-left: 0.3rem;
     vertical-align: middle;
     width: 20px;
+}
+
+.pro-cta:hover {
+    color: var(--white);
+    border-bottom: 1px solid var(--white);
 }
 
 .card-testimonial {
@@ -289,6 +306,13 @@ body {
     color: #fff;
     font-family: var(--headings);
     font-weight: 700;
+    cursor: pointer;
+}
+
+.text {
+    text-align: center;
+    padding: 10px 0px;
+    color: var(--error-ms);
 }
 
 .footer {
@@ -361,20 +385,34 @@ body {
     height: 40px;
     border: 1px solid #fff;
     border-radius: 50%;
+    cursor: pointer;
+}
+
+.redes i:hover {
+    border: 1px solid var(--cyan-cta);
+    color: var(--cyan-cta);
 }
 
 @media (min-width: 768px){ 
     
     .wave {
         background-color: transparent;
-        height: 350px;
+        height: 400px;
     }
 
     .wave::before {
         background-image: url(./images/bg-curvy-desktop.svg);
-        background-size: 100% 350px;
-        height: 350px;
-        top: 5%;
+        background-size: 100% 400px;
+        height: 400px;
+        top: 7%;
+    }
+
+    .img-content .logo-img {
+        width: 180px;
+    }
+
+    .hero-container {
+        min-height: 100vh;
     }
 
     .hero-img {
@@ -382,14 +420,32 @@ body {
     }
 
     .title-hero {
-        font-size: 3rem;
-        padding: 0px 4rem;
+        font-size: 3.5rem;
+        max-width: 900px;
+        margin: 2rem auto;
+    }
+
+    .hero-sub {
+        font-size: 1.2rem;
+        max-width: 700px;
+        margin: 10px auto 2rem;
     }
 
     .cards {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        gap: 3rem 4rem;
+        gap: 3rem 1rem;
+        position: relative;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 85%;
+        margin: 0 auto;
+    }
+
+    .card-p {
+        padding: 0px 5rem;
     }
 
     .productive {
@@ -413,6 +469,13 @@ body {
 
     .content-contacto {
         max-width: 800px;
+    }
+
+    .content-contacto .text {
+        display: none;
+        text-align: left;
+        padding-inline-start: 15px;
+        color: var(--error-ms);
     }
 
     .form {
