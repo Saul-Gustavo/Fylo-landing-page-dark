@@ -310,6 +310,7 @@ body {
 }
 
 .text {
+    display: none;
     text-align: center;
     padding: 10px 0px;
     color: var(--error-ms);

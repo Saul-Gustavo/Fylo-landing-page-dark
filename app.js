@@ -11,6 +11,6 @@ submitBtn.addEventListener('click', (e) => {
         emailInput.style.border = "1.5px solid red";
     } else {
         mensaje.style.display = "none"
-        emailInput.style.border = "1px solid green";
+        emailInput.style.border = "2px solid green";
     }
 })
