@@ -394,6 +394,23 @@ body {
     color: var(--cyan-cta);
 }
 
+.attribution {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--dark-blue-footer);
+    color: white;
+    font-size: 0.9rem;
+}
+
+.attribution a {
+    color: white;
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    color: var(--cyan-cta);
+}
+
 @media (min-width: 768px){ 
     
     .wave {
